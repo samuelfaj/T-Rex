@@ -1,0 +1,5 @@
+{
+    "require": {
+        "samuelfaj/class_db": "^2.1"
+    }
+}

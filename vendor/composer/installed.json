@@ -1,0 +1,40 @@
+[
+    {
+        "name": "samuelfaj/class_db",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/samuelfaj/PHP-class_db.php.git",
+            "reference": "caba9a5d13817c3fea46d21d1b21ef5c9a19c64c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/samuelfaj/PHP-class_db.php/zipball/caba9a5d13817c3fea46d21d1b21ef5c9a19c64c",
+            "reference": "caba9a5d13817c3fea46d21d1b21ef5c9a19c64c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-04-06T03:23:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ClassDb": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Samuel Fajreldines",
+                "email": "samuelfaj@icloud.com"
+            }
+        ],
+        "description": "Class DB allows you to write secure SQL queries easily and work with many different databases using the same syntax."
+    }
+]
