@@ -80,7 +80,7 @@ function generate(){
             $new_dir = $dir . DS . 'views' . DS . $argv[4];
 
             mkdir($new_dir);
-            var_dump(TREX_ROOT.'core'.DS.'cli'.DS.'n-module'.DS.'views'.DS.'view');
+
             xcopy(
                 TREX_ROOT.'core'.DS.'cli'.DS.'n-module'.DS.'views'.DS.'view',
                 $new_dir
