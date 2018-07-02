@@ -18,9 +18,10 @@
                                     <div class="text-wrap p-lg-6">
                                         <h1 class="mt-0 mb-4">Welcome to T-REX</h1>
                                         <hr>
-                                        <p>
-                                            We're implementing Tabler!
-                                        </p>
+
+                                        <p>We're implementing Tabler!</p>
+
+                                        <pre><?php var_dump($this->data) ?></pre>
 
                                         <div class="d-flex align-items-center pt-5 mt-auto">
                                             <div class="avatar avatar-md mr-3" style="background-image: url(https://avatars0.githubusercontent.com/u/12994414?s=460&v=4)"></div>
