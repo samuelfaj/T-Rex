@@ -93,8 +93,7 @@ function generate(){
                 );
             }
         break;
-        default:
-            return showUsage();
+        default: return showUsage();
     }
 }
 
