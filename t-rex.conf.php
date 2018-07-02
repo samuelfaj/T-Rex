@@ -13,3 +13,4 @@ require_once TREX_ROOT. 'vendor/autoload.php';
 
 foreach (glob("classes/*.php")      as $filename){ require_once($filename); }
 foreach (glob("core/classes/*.php") as $filename){ require_once($filename); }
+
