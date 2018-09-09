@@ -1,5 +1,5 @@
 <?php
-namespace TRex\Modules\[%1];
+namespace TRex\Modules\REPLACEBYCLASS;
 
 class Controller{
     public $module;

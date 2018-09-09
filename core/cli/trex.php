@@ -63,7 +63,7 @@
                         file_put_contents(
                             $item,
                             str_replace(
-                                '[%1]'     ,
+                                'REPLACEBYCLASS'     ,
                                 ucwords($argv[3]) ,
                                 file_get_contents($item)
                             )
