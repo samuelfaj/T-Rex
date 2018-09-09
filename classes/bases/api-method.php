@@ -1,7 +1,7 @@
 <?php
     namespace TRex\Classes\Bases;
 
-    use TRex\Api;
+    use TRex\Core\Classes\Api;
 
     class ApiMethod
     {
@@ -12,19 +12,19 @@
             $this->api = $api;
         }
 
-        final public function response($response, int $code = 200)
+        final public function response($response, int $code = 200, bool $error = false)
         {
             $this->api->response($code, array(
-                'link'    => $_SERVER['REQUEST_URI']          ,
-                'code'    => $code                            ,
-                'error'   => !!(round($code / 100) === 2)     ,
-                'version' => TREX_API_VERSION                 ,
+                'link'    => $_SERVER['REQUEST_URI'] ,
+                'code'    => $code                   ,
+                'error'   => $error                  ,
+                'version' => TREX_API_VERSION        ,
                 'return'  => $response
             ));
         }
 
         final public function error(int $code = 400, string $description)
         {
-            $this->response($description, $code);
+            $this->response($description, $code, true);
         }
     }

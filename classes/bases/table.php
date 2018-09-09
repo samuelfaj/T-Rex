@@ -1,20 +1,37 @@
 <?php
     namespace TRex\Classes\Bases;
 
-    use TRex\Query;
+    use TRex\Core\Classes\Query;
 
     class Table
     {
-        protected $table = 'Table Name';
-        protected $primary_key = 'idtable';
+        protected const table = 'Table Name';
+        protected const primary_key = 'idtable';
+
+        public $data = array();
+
+        public function __construct($id)
+        {
+            if(empty($id)) return false;
+
+            $get = $this->get(
+                ['field' => self::primary_key, 'operator' => '=', 'value' => $id],
+                [0, 1]
+            );
+
+            if(!empty($get->rows)){
+                $this->data = $get->rows[0];
+            }
+        }
 
 
         public function get(
             array $where = array(['field' => '1', 'operator' => '=', 'value' => '1']),
-            array $limit = array(0, 20))
+            array $limit = array(0, 20)
+        )
         {
             $query = new Query();
-            $query->table($this->table);
+            $query->table(self::table);
 
             foreach ($where as $where_)
             {
@@ -34,7 +51,7 @@
         public function add(array $fields)
         {
             $query = new Query();
-            $query->table($this->table);
+            $query->table(self::table);
             return $query->insert($fields);
         }
     }

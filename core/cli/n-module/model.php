@@ -1,8 +1,8 @@
 <?php
-namespace TRex\Modules\[%1];
+    namespace TRex\Modules\[%1];
 
-class Model{
-    public function __construct(){
+    class Model{
+        public function __construct(){
 
+        }
     }
-}

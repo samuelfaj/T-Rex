@@ -1,5 +1,5 @@
 <?php
-    namespace TRex;
+    namespace TRex\Core\Classes;
 
     class Api
     {

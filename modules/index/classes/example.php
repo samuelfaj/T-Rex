@@ -1,5 +1,5 @@
 <?php
-    namespace TRex\Modules\Index;
+    namespace TRex\Modules\Index\Classes;
 
     /*
         This is an example of Module Class

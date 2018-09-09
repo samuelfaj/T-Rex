@@ -1,6 +1,9 @@
 <?php
     namespace TRex\Modules\Index;
 
+    use TRex\Classes\Example as GlobalClass;
+    use TRex\Modules\Index\Classes\Example as LocalClass;
+
     class Controller
     {
         public $module;
@@ -11,13 +14,13 @@
             $this->module = $module;
             $this->model  = new Model();
 
-            $example = new \TRex\Classes\Example();
+            $example = new GlobalClass();
             $this->data['global-class'] = $example->example();
         }
 
         public function render()
         {
-            $example = new Example();
+            $example = new LocalClass();
             $this->data['local-class'] = $this->model->example($example->name);
 
             $this->module->View

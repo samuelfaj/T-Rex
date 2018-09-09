@@ -15,11 +15,7 @@
     define('TREX_API_BASE'    , '\\TRex\\Classes\\Bases\\ApiMethod');
     define('TREX_API_INITIAL_NAMESPACE', 'TRex\\Classes\\Api\\');
 
-    require_once TREX_ROOT. 'vendor/autoload.php';
+    require_once TREX_ROOT . 'vendor/autoload.php';
+    require_once TREX_ROOT . 'core/auto-loader/auto-loader.php';
 
-    foreach (glob(TREX_ROOT. "classes/bases/*.php")     as $filename){ require_once($filename); }
-    foreach (glob(TREX_ROOT. "classes/abstracts/*.php") as $filename){ require_once($filename); }
-    foreach (glob(TREX_ROOT. "classes/api/*.php")       as $filename){ require_once($filename); }
-
-    foreach (glob(TREX_ROOT. "core/classes/*.php")      as $filename){ require_once($filename); }
-    foreach (glob(TREX_ROOT. "classes/*.php")           as $filename){ require_once($filename); }
+    TRex\AutoLoader::init();
