@@ -1,4 +1,4 @@
-![T-Rex Printscreen](https://github.com/samuelfaj/T-Rex/blob/v.4.0/modules/index/views/view/assets/trex.screenshot.png)
+![Screenshot](https://github.com/samuelfaj/T-Rex/raw/master/screenshot.png?raw=true "T-Rex")
 
 # T-Rex
 A small framework made to build simple projects faster.
