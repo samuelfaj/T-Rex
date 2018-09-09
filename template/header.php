@@ -1,4 +1,4 @@
-<?php $base = 'template/tabler/tabler/dist'; ?>
+<?php $base = 'template/tabler/dist'; ?>
 <!doctype html>
 <html lang="en" dir="ltr">
     <head>
