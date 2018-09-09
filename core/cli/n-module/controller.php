@@ -10,13 +10,11 @@ class Controller{
     }
 
     public function render(){
-        $example = new Example();
-
-        $this->module->View
+        $this->module->view
             ->title('REX')
             ->css(true)
             ->javascript(true)
-            ->data($this->model->example($example->name))
+            ->data(array())
             ->render();
     }
 }
