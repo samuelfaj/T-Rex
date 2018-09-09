@@ -39,18 +39,18 @@
             $this->execute();
         }
 
-        public function execute()
+        public function execute() : void
         {
             $call = array($this->class, $this->method);
             call_user_func_array($call, array($this->params));
         }
 
-        public function error(int $code)
+        public function error(int $code) : void
         {
             $this->response($code, false);
         }
 
-        public function response(int $code, $return = array())
+        public function response(int $code, $return = array()) : void
         {
             http_response_code($code);
 

@@ -15,7 +15,8 @@
             spl_autoload_register(array('\\TRex\\AutoLoader', 'loadClass'));
         }
 
-        public static function loadClass(string $name, string $type = 'require', bool $once = true) {
+        public static function loadClass(string $name, string $type = 'require', bool $once = true)
+        {
             $finder = new Finder($name);
 
             if(empty($finder->path))
@@ -31,7 +32,8 @@
             self::load($finder->path, $type, $once);
         }
 
-        private static function load(string $name, string $type, bool $once) {
+        private static function load(string $name, string $type, bool $once)
+        {
 
             if($type === 'require')
             {

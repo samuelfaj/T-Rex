@@ -1,7 +1,7 @@
 <?php
     /*
         This is an example of T-REX API Class
-        It's loaded always by t-rex.conf.php
+        You can see it on: http://localhost/T-Rex/api/Example/example
     */
 
     namespace TRex\Classes\Api;

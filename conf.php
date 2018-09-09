@@ -1,6 +1,4 @@
 <?php
-    header('Content-Type: text/html; charset=utf-8');
-
     // DATABASE
     define('TREX_DATABASE'       , array(
         'host'     => 'localhost' ,  // string - Host of Connection.

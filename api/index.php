@@ -1,5 +1,7 @@
 <?php
     define("TREX_ROOT", __DIR__ ."/../");
-    require_once(TREX_ROOT. 't-rex.conf.php');
+    require_once(TREX_ROOT. 'conf.php');
 
-    (new TRex\Core\Classes\Api(explode('/', $_GET['params'])));
+    use TRex\Core\Classes\Api;
+
+    new Api(explode('/', $_GET['params']));

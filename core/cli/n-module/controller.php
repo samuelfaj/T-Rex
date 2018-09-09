@@ -10,7 +10,7 @@ class Controller{
     }
 
     public function render(){
-        $this->module->View
+        $this->module->view
             ->title('REX')
             ->css(true)
             ->javascript(true)

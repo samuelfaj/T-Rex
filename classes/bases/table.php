@@ -28,7 +28,7 @@
         public function get(
             array $where = array(['field' => '1', 'operator' => '=', 'value' => '1']),
             array $limit = array(0, 20)
-        )
+        ) : object
         {
             $query = new Query();
             $query->table(self::table);
@@ -48,7 +48,7 @@
             );
         }
 
-        public function add(array $fields)
+        public function add(array $fields) : object
         {
             $query = new Query();
             $query->table(self::table);

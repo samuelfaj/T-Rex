@@ -23,7 +23,7 @@
             $example = new LocalClass();
             $this->data['local-class'] = $this->model->example($example->name);
 
-            $this->module->View
+            $this->module->view
                 ->title('REX')
                 ->css(true)
                 ->javascript(true)
